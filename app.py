@@ -789,3 +789,20 @@ st.markdown('<div class="section-title">Mega & Large Cap Stocks ($100B+)</div>',
 
 df_stocks = build_table(price_df, STOCKS_LOCKED, name_map)
 render_table_html(df_stocks, show_cols, height_px=900)
+
+# =========================
+# RS Explanation (bottom)
+# =========================
+st.markdown('<div class="hr"></div>', unsafe_allow_html=True)
+
+st.markdown(
+    """
+**How RS is Calculated:** RS = % change in (Symbol ÷ Benchmark), then percentile-ranked (1–99)
+
+For each symbol, we divide its price by the benchmark’s price to create a daily ratio for the lookback period.  
+We then measure the percentage change in that ratio from the start of the period to the end.  
+This shows how much the symbol outperformed or underperformed the benchmark over that window.  
+Finally, all RS scores are ranked as a percentile (1–99) compared to all symbols shown in the dashboard.
+"""
+)
+
