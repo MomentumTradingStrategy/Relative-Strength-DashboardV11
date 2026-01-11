@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 import yfinance as yf
 
-st.set_page_config(page_title="Market Overview Dashboard", layout="wide")
+st.set_page_config(page_title="Relative Strength Dashboard", layout="wide")
 
 BENCHMARK = "SPY"
 PRICE_HISTORY_PERIOD = "2y"
