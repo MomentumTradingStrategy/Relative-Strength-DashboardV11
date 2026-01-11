@@ -703,7 +703,7 @@ def render_table_html(df: pd.DataFrame, columns: list[str], height_px: int = 360
 # =========================
 # UI
 # =========================
-st.title("Market Overview Dashboard")
+st.title("Relative Strength Dashboard")
 st.caption(f"As of: {_asof_ts()} • RS Benchmark: {BENCHMARK}")
 
 with st.sidebar:
