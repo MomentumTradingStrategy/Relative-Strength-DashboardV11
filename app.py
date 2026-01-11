@@ -805,4 +805,3 @@ This shows how much the symbol outperformed or underperformed the benchmark over
 Finally, all RS scores are ranked as a percentile (1–99) compared to all symbols shown in the dashboard.
 """
 )
-
